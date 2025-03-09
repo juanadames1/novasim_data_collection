@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Tiempos</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Tiempos</h1>
+    </header>
+    <main class="main-content">
+        <div class="input-type-selector">
+            <button class="input-type-button" data-type="normal">Normal</button>
+            <button class="input-type-button" data-type="gopass">Gopass</button>
+        </div>
+        <div class="action-buttons">
+            <button class="action-button" id="btn-llegada" onclick="registrar('llegada')">Llegada Vehículo</button>
+            <button class="action-button" id="btn-procesamiento" onclick="registrar('procesamiento')">Procesamiento Vehículo</button>
+            <button class="action-button" id="btn-entrada" onclick="registrar('entrada')">Entrada Parqueadero</button>
+        </div>
+        <div id="mensaje"></div>
+    </main>
+    <footer>
+        <p>App desarrollada por el equipo NovaSim</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
